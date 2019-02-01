@@ -1,174 +1,175 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>Online TourK</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Malgun+Gothic">
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="css/online.css">
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
-  <script src="js/online.js"></script>
+<meta charset="UTF-8">
+<title>Online TourK</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Malgun+Gothic">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="css/online.css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
+<script src="js/online.js"></script>
 </head>
 <body>
+<!-- gnb 구역 -->
 <header>
-  <div class="center">
-    <h1>
-      <a href="#"><img src="img/logo.png" alt="온라인투어"></a>
-    </h1>
-    <div class="gnb">
-      <div class="gnb_left">
-        <button><i class="fas fa-bars"></i><span>전체메뉴</span></button>
-        <ul>
-          <li class="line"><a href="#">홈쇼핑</a></li>
-          <li class="line"><a href="#">기획전</a></li>
-          <li><a href="#">제주항공할인</a></li>
-        </ul>
-      </div>
+<div class="center">
+  <h1>
+    <a href="#"><img src="img/logo.png" alt="온라인투어"></a>
+  </h1>
+  <div class="gnb">
+    <div class="gnb_left">
+      <button><i class="fas fa-bars"></i><span>전체메뉴</span></button>
+      <ul>
+        <li class="line"><a href="#">홈쇼핑</a></li>
+        <li class="line"><a href="#">기획전</a></li>
+        <li><a href="#">제주항공할인</a></li>
+      </ul>
+    </div>
 
-      <div class="gnb_right">
-        <ul>
-          <li><a href="#">로그인</a></li>
-          <li class="line"><a href="#">예약/확인</a></li>
-          <li class="line"><button><i class="fas fa-search"></i><span class="blind">검색</span></button></li>
-        </ul>
+    <div class="gnb_right">
+      <ul>
+        <li><a href="#">로그인</a></li>
+        <li class="line"><a href="#">예약/확인</a></li>
+        <li class="line"><button><i class="fas fa-search"></i><span class="blind">검색</span></button></li>
+      </ul>
+    </div>
+    <div class="search_popup">
+      <div class="search_open">
+        <input type="text" placeholder="원하시는 검색어를 입력하세요.">
+        <a href="#"><span><i class="fas fa-search"></i></span></a>
       </div>
-      <div class="search_popup">
-        <div class="search_open">
-          <input type="text" placeholder="원하시는 검색어를 입력하세요.">
-          <a href="#"><span><i class="fas fa-search"></i></span></a>
-        </div>
-        <div class="search_close">
-            <a href="#"><i class="fas fa-times"></i></a>
-        </div>
+      <div class="search_close">
+          <a href="#"><i class="fas fa-times"></i></a>
       </div>
     </div>
   </div>
+</div>
 </header>
 <!---------------------------------------------------------------->
 <!-- pop up 전체메뉴 구역 -->
 <nav class="menu">
-  <div class="center">
-    <button class="btn-close"><i class="fas fa-times"></i><span class="blind">닫기</span></button>
-    <div class="group">
-      <h2>해외여행</h2>
+<div class="center">
+  <button class="btn-close"><i class="fas fa-times"></i><span class="blind">닫기</span></button>
+  <div class="group">
+    <h2>해외여행</h2>
+    <dl>
+      <dt class="color"><a href="#">해외패키지<i class="fas fa-angle-right"></i></a></dt>
+      <dd><a href="#">동남아/홍콩/대만</a></dd>
+      <dd><a href="#">일본</a></dd>
+      <dd><a href="#">중국</a></dd>
+      <dd><a href="#">괌/사이판</a></dd>
+      <dd><a href="#">호주/뉴질랜드/피지</a></dd>
+      <dd><a href="#">유럽</a></dd>
+      <dd><a href="#">미주/캐나다/중남미</a></dd>
+      <dd><a href="#">인도/아프리카</a></dd>
+      <dd class="color mt20"><a href="#">pic(괌/사이판)</a></dd>
+    </dl>
+    <dl class="bg_color">
+      <dt class="color"><a href="#">해외 자유여행<i class="fas fa-angle-right"></i></a></dt>
+      <dd><a href="#">동남아/홍콩/대만</a></dd>
+      <dd><a href="#">일본</a></dd>
+      <dd><a href="#">중국</a></dd>
+      <dd><a href="#">유럽</a></dd>
+      <dd><a href="#">미주/중남미</a></dd>
+      <dd><a href="#">남태평양</a></dd>
+      <dd><a href="#">괌/사이판</a></dd>
+      <dd><a href="#">아프리카</a></dd>
+      <dd class="color mt20"><a href="#">미주 자동차여행</a></dd>
+      <dd class="color"><a href="#">유럽 맞춤/배낭여행</a></dd>
+    </dl>
+    <dl>
+      <dt class="color"><a href="#">현지투어<i class="fas fa-angle-right"></i></a></dt>
+      <dd><a href="#">동남아/홍콩/대만</a></dd>
+      <dd><a href="#">일본</a></dd>
+      <dd><a href="#">중국</a></dd>
+      <dd><a href="#">유럽</a></dd>
+      <dd><a href="#">미주/캐나다</a></dd>
+      <dd><a href="#">호주/뉴질랜드</a></dd>
+      <dd><a href="#">괌/사이판</a></dd>
+    </dl>
+    <dl class="bg_color">
+      <dt class="color"><a href="#">항공<i class="fas fa-angle-right"></i></a></dt>
+      <dd><a href="#">실시간 항공예약</a></dd>
+      <dd><a href="#">공동구매항공</a></dd>
+      <dd><a href="#">지방출발</a></dd>
+      <dd><a href="#">단체항공 문의</a></dd>
+    </dl>
+    <dl class="bg_color">
+      <dt class="color"><a href="#">호텔<i class="fas fa-angle-right"></i></a></dt>
+      <dd><a href="#">해외호텔</a></dd>
+      <dd><a href="#">국내호텔</a></dd>
+      <dd><a href="#">해외 여행자보험</a></dd>
+      <dd><a href="#">중국비자</a></dd>
+      <dd><a href="#">미국비자</a></dd>
+    </dl>
+  </div>
+
+  <div class="group">
+    <div class="left">
+      <h2>국내테마여행</h2>
       <dl>
-        <dt class="color"><a href="#">해외패키지<i class="fas fa-angle-right"></i></a></dt>
-        <dd><a href="#">동남아/홍콩/대만</a></dd>
-        <dd><a href="#">일본</a></dd>
-        <dd><a href="#">중국</a></dd>
-        <dd><a href="#">괌/사이판</a></dd>
-        <dd><a href="#">호주/뉴질랜드/피지</a></dd>
-        <dd><a href="#">유럽</a></dd>
-        <dd><a href="#">미주/캐나다/중남미</a></dd>
-        <dd><a href="#">인도/아프리카</a></dd>
-        <dd class="color mt20"><a href="#">pic(괌/사이판)</a></dd>
+        <dt class="color"><a href="#">국내여행<i class="fas fa-angle-right"></i></a></dt>
+        <dd><a href="#">버스관광패키지</a></dd>
+        <dd><a href="#">제주 자유여행</a></dd>
+        <dd><a href="#">제주 자유여행</a></dd>
+        <dd><a href="#">제주 지방출발</a></dd>
+        <dd><a href="#">제주 골프</a></dd>
+        <dd><a href="#">국내테마 섬여행</a></dd>
+        <dd><a href="#">국내테마 버스여행</a></dd>
+        <dd><a href="#">추천여행</a></dd>
       </dl>
       <dl class="bg_color">
-        <dt class="color"><a href="#">해외 자유여행<i class="fas fa-angle-right"></i></a></dt>
-        <dd><a href="#">동남아/홍콩/대만</a></dd>
-        <dd><a href="#">일본</a></dd>
-        <dd><a href="#">중국</a></dd>
-        <dd><a href="#">유럽</a></dd>
-        <dd><a href="#">미주/중남미</a></dd>
+        <dt class="color"><a href="#">허니문<i class="fas fa-angle-right"></i></a></dt>
+        <dd><a href="#">태국</a></dd>
+        <dd><a href="#">인도네시아</a></dd>
+        <dd><a href="#">필리핀</a></dd>
+        <dd><a href="#">베트남</a></dd>
+        <dd><a href="#">칸쿤</a></dd>
+        <dd><a href="#">몰디브</a></dd>
+        <dd><a href="#">하와이</a></dd>
         <dd><a href="#">남태평양</a></dd>
-        <dd><a href="#">괌/사이판</a></dd>
-        <dd><a href="#">아프리카</a></dd>
-        <dd class="color mt20"><a href="#">미주 자동차여행</a></dd>
-        <dd class="color"><a href="#">유럽 맞춤/배낭여행</a></dd>
+        <dd><a href="#">유럽</a></dd>
+        <dd><a href="#">특수 및 기타지역</a></dd>
+        <dd><a href="#">부산출발</a></dd>
       </dl>
       <dl>
-        <dt class="color"><a href="#">현지투어<i class="fas fa-angle-right"></i></a></dt>
-        <dd><a href="#">동남아/홍콩/대만</a></dd>
-        <dd><a href="#">일본</a></dd>
+        <dt class="color"><a href="#">골프<i class="fas fa-angle-right"></i></a></dt>
         <dd><a href="#">중국</a></dd>
+        <dd><a href="#">일본</a></dd>
+        <dd><a href="#">동남아</a></dd>
+        <dd><a href="#">괌/사이판/하와이</a></dd>
+      </dl>
+      <dl class="bg_color">
+        <dt class="color"><a href="#">트레킹/크루즈<i class="fas fa-angle-right"></i></a></dt>
         <dd><a href="#">유럽</a></dd>
-        <dd><a href="#">미주/캐나다</a></dd>
-        <dd><a href="#">호주/뉴질랜드</a></dd>
-        <dd><a href="#">괌/사이판</a></dd>
-      </dl>
-      <dl class="bg_color">
-        <dt class="color"><a href="#">항공<i class="fas fa-angle-right"></i></a></dt>
-        <dd><a href="#">실시간 항공예약</a></dd>
-        <dd><a href="#">공동구매항공</a></dd>
-        <dd><a href="#">지방출발</a></dd>
-        <dd><a href="#">단체항공 문의</a></dd>
-      </dl>
-      <dl class="bg_color">
-        <dt class="color"><a href="#">호텔<i class="fas fa-angle-right"></i></a></dt>
-        <dd><a href="#">해외호텔</a></dd>
-        <dd><a href="#">국내호텔</a></dd>
-        <dd><a href="#">해외 여행자보험</a></dd>
-        <dd><a href="#">중국비자</a></dd>
-        <dd><a href="#">미국비자</a></dd>
+        <dd><a href="#">뉴질랜드</a></dd>
+        <dd><a href="#">미주/중남미</a></dd>
+        <dd><a href="#">아프리카</a></dd>
+        <dd><a href="#">히말라야</a></dd>
+        <dd><a href="#">아시아</a></dd>
+        <dd><a href="#">기타지역</a></dd>
+        <dd><a href="#">YOUNG 크루즈</a></dd>
+        <dd><a href="#">리버 크루즈</a></dd>
       </dl>
     </div>
 
-    <div class="group">
-      <div class="left">
-        <h2>국내테마여행</h2>
-        <dl>
-          <dt class="color"><a href="#">국내여행<i class="fas fa-angle-right"></i></a></dt>
-          <dd><a href="#">버스관광패키지</a></dd>
-          <dd><a href="#">제주 자유여행</a></dd>
-          <dd><a href="#">제주 자유여행</a></dd>
-          <dd><a href="#">제주 지방출발</a></dd>
-          <dd><a href="#">제주 골프</a></dd>
-          <dd><a href="#">국내테마 섬여행</a></dd>
-          <dd><a href="#">국내테마 버스여행</a></dd>
-          <dd><a href="#">추천여행</a></dd>
-        </dl>
-        <dl class="bg_color">
-          <dt class="color"><a href="#">허니문<i class="fas fa-angle-right"></i></a></dt>
-          <dd><a href="#">태국</a></dd>
-          <dd><a href="#">인도네시아</a></dd>
-          <dd><a href="#">필리핀</a></dd>
-          <dd><a href="#">베트남</a></dd>
-          <dd><a href="#">칸쿤</a></dd>
-          <dd><a href="#">몰디브</a></dd>
-          <dd><a href="#">하와이</a></dd>
-          <dd><a href="#">남태평양</a></dd>
-          <dd><a href="#">유럽</a></dd>
-          <dd><a href="#">특수 및 기타지역</a></dd>
-          <dd><a href="#">부산출발</a></dd>
-        </dl>
-        <dl>
-          <dt class="color"><a href="#">골프<i class="fas fa-angle-right"></i></a></dt>
-          <dd><a href="#">중국</a></dd>
-          <dd><a href="#">일본</a></dd>
-          <dd><a href="#">동남아</a></dd>
-          <dd><a href="#">괌/사이판/하와이</a></dd>
-        </dl>
-        <dl class="bg_color">
-          <dt class="color"><a href="#">트레킹/크루즈<i class="fas fa-angle-right"></i></a></dt>
-          <dd><a href="#">유럽</a></dd>
-          <dd><a href="#">뉴질랜드</a></dd>
-          <dd><a href="#">미주/중남미</a></dd>
-          <dd><a href="#">아프리카</a></dd>
-          <dd><a href="#">히말라야</a></dd>
-          <dd><a href="#">아시아</a></dd>
-          <dd><a href="#">기타지역</a></dd>
-          <dd><a href="#">YOUNG 크루즈</a></dd>
-          <dd><a href="#">리버 크루즈</a></dd>
-        </dl>
-      </div>
-
-      <div class="right">
-        <h2>티켓</h2>
-        <dl>
-          <dt class="color"><a href="#">해외티켓<i class="fas fa-angle-right"></i></a></dt>
-          <dd><a href="#">유레일패스</a></dd>
-          <dd><a href="#">해외 축구티켓(EPL)</a></dd>
-          <dd><a href="#">쿠루쿠루 버스</a></dd>
-          <dd><a href="#">괌/사이판/하와이</a></dd>
-        </dl>
-      </div>
+    <div class="right">
+      <h2>티켓</h2>
+      <dl>
+        <dt class="color"><a href="#">해외티켓<i class="fas fa-angle-right"></i></a></dt>
+        <dd><a href="#">유레일패스</a></dd>
+        <dd><a href="#">해외 축구티켓(EPL)</a></dd>
+        <dd><a href="#">쿠루쿠루 버스</a></dd>
+        <dd><a href="#">괌/사이판/하와이</a></dd>
+      </dl>
     </div>
   </div>
+</div>
 </nav>
 <!-- pop up 전체메뉴 구역
 ------------------------------------------------------>
@@ -176,351 +177,351 @@
 
 <!-- main slide section -->
 <section class="main_slide">
-  <h2 class="blind">메인 광고</h2>
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <!-- 첫번째 슬라이드 -->
-      <div class="swiper-slide">
-        <div class="center">
-          <div class="text_box">
-            <h3>대한항공 직항 스페인일주 8일</h3>
-            <p>전일정 4성급<br>스페인 ★BIG3★ 도시 완성</p>
-            <a href="#" class="main_btn">자세히보기</a>
-          </div>
+<h2 class="blind">메인 광고</h2>
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <!-- 첫번째 슬라이드 -->
+    <div class="swiper-slide">
+      <div class="center">
+        <div class="text_box">
+          <h3>대한항공 직항 스페인일주 8일</h3>
+          <p>전일정 4성급<br>스페인 ★BIG3★ 도시 완성</p>
+          <a href="#" class="main_btn">자세히보기</a>
         </div>
       </div>
-      <!-- 두번째 슬라이드 -->
-      <div class="swiper-slide">
-        <div class="center">
-          <div class="text_box">
-            <h3>조기예약행사특가</h3>
-            <p>매력적인파리</p>
-            <a href="#" class="main_btn">자세히보기</a>
-          </div>
+    </div>
+    <!-- 두번째 슬라이드 -->
+    <div class="swiper-slide">
+      <div class="center">
+        <div class="text_box">
+          <h3>조기예약행사특가</h3>
+          <p>매력적인파리</p>
+          <a href="#" class="main_btn">자세히보기</a>
         </div>
       </div>
-      <!-- 세번째 슬라이드 -->
-      <div class="swiper-slide">
-        <div class="center">
-          <div class="text_box">
-            <h3>조기예약행사특가</h3>
-            <p>매력적인파리</p>
-            <a href="#" class="main_btn">자세히보기</a>
-          </div>
+    </div>
+    <!-- 세번째 슬라이드 -->
+    <div class="swiper-slide">
+      <div class="center">
+        <div class="text_box">
+          <h3>조기예약행사특가</h3>
+          <p>매력적인파리</p>
+          <a href="#" class="main_btn">자세히보기</a>
         </div>
       </div>
-      <!-- 네번째 슬라이드 -->
-      <div class="swiper-slide">
-        <div class="center">
-          <div class="text_box">
-            <h3>조기예약행사특가</h3>
-            <p>매력적인파리</p>
-            <a href="#" class="main_btn">자세히보기</a>
-          </div>
+    </div>
+    <!-- 네번째 슬라이드 -->
+    <div class="swiper-slide">
+      <div class="center">
+        <div class="text_box">
+          <h3>조기예약행사특가</h3>
+          <p>매력적인파리</p>
+          <a href="#" class="main_btn">자세히보기</a>
         </div>
       </div>
     </div>
   </div>
-  <div class="swiper-pagination"></div>
+</div>
+<div class="swiper-pagination"></div>
 
-  <!-- 여행지 검색 -->
-  <div class="center">
-    <div class="ad_popup">
-      <a href="#" class="ad_popup_img"><img src="img/adimg1.jpg"></a>
-      <button class="ad_popup_close"><i class="fas fa-times"></i></button>
-    </div>
-    <div class="search_area">
-      <form action="">
-        <h2>여행지검색</h2>
-        <div class="sarch_select">
-          <div class="sarch_select_button">
-            <button class="round_trip active3">왕복</button>
-            <button class="one_way">편도</button>
-          </div>
-          <h3>도시명 검색</h3>
-          <div class="select_box city_name">
-            <div class="select_box_left">
-              <input type="text" id="start_city" placeholder="출발도시(도시명 입력)">
-              <a href="#"><i class="fas fa-map-marker-alt"></i></a>
-            </div>
-            <div class="select_box_right">
-              <input type="text" id="arrive_city" placeholder="도착도시(도시명 입력)">
-              <a href="#"><i class="fas fa-map-marker-alt"></i></a>
-            </div>
-          </div>
-          <div class="city_popup">
-            <p>주요도시 바로선택
-              <button><i class="fas fa-times"></i></button>
-            </p>
-            <table class="city_list">
-              <colgroup>
-        				<col width="*">
-        				<col width="90">
-        				<col width="90">
-        				<col width="90">
-        				<col width="90">
-        				<col width="90">
-        			</colgroup>
-              <tr>
-                <th rowspan="2">국내</th>
-                <td><a href="#">서울/인천<br>(SEL/ICN)</a></td>
-                <td><a href="#">인천(ICN)</a></td>
-                <td><a href="#">김포(GMP)</a></td>
-                <td><a href="#">부산</a></td>
-                <td><a href="#">대구</a></td>
-              </tr>
-              <tr>
-                <td><a href="#">청주</a></td>
-                <td><a href="#">제주</a></td>
-                <td><a href="#">무안</a></td>
-                <td><a href="#">광주</a></td>
-                <td><a href="#">울산</a></td>
-              </tr>
-              <tr>
-                <th rowspan="2">일본</th>
-                <td><a href="#">도쿄(전체)</a></td>
-                <td><a href="#">도쿄(나리타)</a></td>
-                <td><a href="#">도쿄(하네다)</a></td>
-                <td><a href="#">오사카(간사이)</a></td>
-                <td><a href="#">후쿠오카</a></td>
-              </tr>
-              <tr>
-                <td><a href="#">가고시마</a></td>
-                <td><a href="#">나고야</a></td>
-                <td><a href="#">삿포로</a></td>
-                <td><a href="#">오카야마</a></td>
-                <td><a href="#">오키나와</a></td>
-              </tr>
-              <tr>
-                <th rowspan="3">중국</th>
-                <td><a href="#">북경</a></td>
-                <td><a href="#">상해(푸동)</a></td>
-                <td><a href="#">상해(홍차오)</a></td>
-                <td><a href="#">광주(광저우)</a></td>
-                <td><a href="#">청도</a></td>
-              </tr>
-              <tr>
-                <td><a href="#">대련</a></td>
-                <td><a href="#">심양</a></td>
-                <td><a href="#">심천</a></td>
-                <td><a href="#">연길</a></td>
-                <td><a href="#">연대</a></td>
-              </tr>
-              <tr>
-                <td><a href="#">위해</a></td>
-                <td><a href="#">장춘</a></td>
-                <td><a href="#">천진</a></td>
-                <td><a href="#">하얼빈</a></td>
-                <td><a href="#">항주</a></td>
-              </tr>
-              <tr>
-                <th rowspan="4">아시아</th>
-                <td><a href="#">방콕</a></td>
-                <td><a href="#">마닐라</a></td>
-                <td><a href="#">싱가포르</a></td>
-                <td><a href="#">타이페이</a></td>
-                <td><a href="#">홍콩</a></td>
-              </tr>
-              <tr>
-                <td><a href="#">나트랑</a></td>
-                <td><a href="#">다낭</a></td>
-                <td><a href="#">델리</a></td>
-                <td><a href="#">마카오</a></td>
-                <td><a href="#">발리</a></td>
-              </tr>
-              <tr>
-                <td><a href="#">비엔티엔</a></td>
-                <td><a href="#">세부</a></td>
-                <td><a href="#">자카르타</a></td>
-                <td><a href="#">코타키나발루</a></td>
-                <td><a href="#">쿠알라룸푸르</a></td>
-              </tr>
-              <tr>
-                <td><a href="#">클락</a></td>
-                <td><a href="#">푸켓</a></td>
-                <td><a href="#">프놈펜</a></td>
-                <td><a href="#">하노이</a></td>
-                <td><a href="#">호치민</a></td>
-              </tr>
-              <tr>
-                <th rowspan="3">미주</th>
-                <td><a href="#">LA</a></td>
-                <td><a href="#">뉴욕</a></td>
-                <td><a href="#">뉴욕(뉴왁)</a></td>
-                <td><a href="#">뉴욕(라과디아)</a></td>
-                <td><a href="#">호놀룰루</a></td>
-              </tr>
-              <tr>
-                <td><a href="#">라스베가스</a></td>
-                <td><a href="#">샌프란시스코</a></td>
-                <td><a href="#">시애틀</a></td>
-                <td><a href="#">시카고(오헤어)</a></td>
-                <td><a href="#">워싱턴(덜러스)</a></td>
-              </tr>
-              <tr>
-                <td><a href="#">아틀랜타</a></td>
-                <td><a href="#">달라스</a></td>
-                <td><a href="#">디트로이트</a></td>
-                <td><a href="#">보스톤</a></td>
-                <td><a href="#">미니에폴리스</a></td>
-              </tr>
-              <tr>
-                <th rowspan="1">캐나다</th>
-                <td><a href="#">밴쿠버</a></td>
-                <td><a href="#">토론토</a></td>
-                <td><a href="#">몬트리올</a></td>
-                <td><a href="#">에드먼튼</a></td>
-                <td><a href="#">캘거리</a></td>
-              </tr>
-              <tr>
-                <th rowspan="1">중남미</th>
-                <td><a href="#">리마</a></td>
-                <td><a href="#">멕시코시티</a></td>
-                <td><a href="#">몬테레이</a></td>
-                <td><a href="#">상파울로</a></td>
-                <td><a href="#">칸쿤</a></td>
-              </tr>
-              <tr>
-                <th rowspan="4">유럽</th>
-                <td><a href="#">런던(히드로)</a></td>
-                <td><a href="#">로마</a></td>
-                <td><a href="#">파리</a></td>
-                <td><a href="#">바르셀로나</a></td>
-                <td><a href="#">마드리드</a></td>
-              </tr>
-              <tr>
-                <td><a href="#">모스크바</a></td>
-                <td><a href="#">뮌헨</a></td>
-                <td><a href="#">밀라노</a></td>
-                <td><a href="#">베네치아</a></td>
-                <td><a href="#">부다페스트</a></td>
-              </tr>
-              <tr>
-                <td><a href="#">블라디보스톡</a></td>
-                <td><a href="#">비엔나(빈)</a></td>
-                <td><a href="#">암스테르담</a></td>
-                <td><a href="#">이스탄불</a></td>
-                <td><a href="#">자그레브</a></td>
-              </tr>
-              <tr>
-                <td><a href="#">취리히</a></td>
-                <td><a href="#">코펜하겐</a></td>
-                <td><a href="#">프라하</a></td>
-                <td><a href="#">프랑크푸르트</a></td>
-                <td><a href="#">헬싱키</a></td>
-              </tr>
-              <tr>
-                <th rowspan="1">대양주</th>
-                <td><a href="#">괌</a></td>
-                <td><a href="#">사이판</a></td>
-                <td><a href="#">시드니</a></td>
-                <td><a href="#">브리즈번</a></td>
-                <td><a href="#">오클랜드</a></td>
-              </tr>
-              <tr>
-                <th rowspan="2">중동<br>아프리카</th>
-                <td><a href="#">나이로비</a></td>
-                <td><a href="#">다에살렘</a></td>
-                <td><a href="#">두바이</a></td>
-                <td><a href="#">아디스아바바</a></td>
-                <td><a href="#">아부다비</a></td>
-              </tr>
-              <tr>
-                <td><a href="#">요하네스버그</a></td>
-                <td><a href="#">카이로</a></td>
-                <td><a href="#">케이프타운</a></td>
-                <td><a href="#">테헤란</a></td>
-                <td><a href="#">텔아비브</a></td>
-              </tr>
-            </table>
-          </div>
-
-
-
-
-          <h3>날짜 선택</h3>
-          <div class="select_box day_pick">
-            <div class="select_box_left">
-              <input type="text" id="from_date" placeholder="출발일 선택">
-            </div>
-            <div class="return">
-              <input class="return_left" type="text" id="to_date" placeholder="귀국일 선택">
-              <button class="return_right">미정</button>
-            </div>
-          </div>
-          <h3>인원 선택</h3>
-          <div class="select_person">
-            <div>
-              <select>
-                <option value="성인1명">성인1명</option>
-                <option value="성인2명">성인2명</option>
-                <option value="성인3명">성인3명</option>
-                <option value="성인4명">성인4명</option>
-                <option value="성인5명">성인5명</option>
-                <option value="성인6명">성인6명</option>
-                <option value="성인7명">성인7명</option>
-                <option value="성인8명">성인8명</option>
-                <option value="성인9명">성인9명</option>
-              </select>
-              <span>만 12세 이상</span>
-            </div>
-            <div>
-              <select>
-                <option value="아동1명">아동1명</option>
-                <option value="아동2명">아동2명</option>
-                <option value="아동3명">아동3명</option>
-                <option value="아동4명">아동4명</option>
-                <option value="아동5명">아동5명</option>
-                <option value="아동6명">아동6명</option>
-                <option value="아동7명">아동7명</option>
-                <option value="아동8명">아동8명</option>
-                <option value="아동9명">아동9명</option>
-              </select>
-              <span>만 2세~11세</span>
-            </div>
-            <div>
-              <select>
-                <option value="유아1명">유아1명</option>
-                <option value="유아2명">유아2명</option>
-                <option value="유아3명">유아3명</option>
-                <option value="유아4명">유아4명</option>
-                <option value="유아5명">유아5명</option>
-                <option value="유아6명">유아6명</option>
-                <option value="유아7명">유아7명</option>
-                <option value="유아8명">유아8명</option>
-                <option value="유아9명">유아9명</option>
-              </select>
-              <span>만 2세 미만</span>
-            </div>
-          </div>
-          <div class="select_box search_button">
-            <p><a href="#">여행지 검색하러 가기</a></p>
-            <a href="#" class="go_search">검색하기</a>
-          </div>
-
+<!-- 여행지 검색 -->
+<div class="center">
+  <div class="ad_popup">
+    <a href="#" class="ad_popup_img"><img src="img/adimg1.jpg"></a>
+    <button class="ad_popup_close"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="search_area">
+    <form action="">
+      <h2>여행지검색</h2>
+      <div class="sarch_select">
+        <div class="sarch_select_button">
+          <button type="button" class="round_trip active3">왕복</button>
+          <button type="button" class="one_way">편도</button>
         </div>
-      </form>
-      <div class="seach_icon">
-        <ul>
-          <li>
-            <a href="#"><img src="img/search1.png">비행기</a>
-          </li>
-          <li>
-            <a href="#"><img src="img/search2.png">호텔</a>
-          </li>
-          <li>
-            <a href="#"><img src="img/search3.png">렌트카</a>
-          </li>
-          <li>
-            <a href="#"><img src="img/search4.png">티켓</a>
-          </li>
-          <li>
-            <a href="#"><img src="img/search5.png">이벤트</a>
-          </li>
-        </ul>
+        <h3>도시명 검색</h3>
+        <div class="select_box city_name">
+          <div class="select_box_left">
+            <input type="text" id="start_city" placeholder="출발도시(도시명 입력)">
+            <a href="#start_city"><i class="fas fa-map-marker-alt"></i></a>
+          </div>
+          <div class="select_box_right">
+            <input type="text" id="arrive_city" placeholder="도착도시(도시명 입력)">
+            <a href="#arrive_city"><i class="fas fa-map-marker-alt"></i></a>
+          </div>
+        </div>
+        <div class="city_popup">
+          <p>주요도시 바로선택
+            <button><i class="fas fa-times"></i></button>
+          </p>
+          <table class="city_list">
+            <colgroup>
+              <col width="*">
+              <col width="90">
+              <col width="90">
+              <col width="90">
+              <col width="90">
+              <col width="90">
+            </colgroup>
+            <tr>
+              <th rowspan="2">국내</th>
+              <td><a href="#">서울/인천<br>(SEL/ICN)</a></td>
+              <td><a href="#">인천(ICN)</a></td>
+              <td><a href="#">김포(GMP)</a></td>
+              <td><a href="#">부산</a></td>
+              <td><a href="#">대구</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">청주</a></td>
+              <td><a href="#">제주</a></td>
+              <td><a href="#">무안</a></td>
+              <td><a href="#">광주</a></td>
+              <td><a href="#">울산</a></td>
+            </tr>
+            <tr>
+              <th rowspan="2">일본</th>
+              <td><a href="#">도쿄(전체)</a></td>
+              <td><a href="#">도쿄(나리타)</a></td>
+              <td><a href="#">도쿄(하네다)</a></td>
+              <td><a href="#">오사카(간사이)</a></td>
+              <td><a href="#">후쿠오카</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">가고시마</a></td>
+              <td><a href="#">나고야</a></td>
+              <td><a href="#">삿포로</a></td>
+              <td><a href="#">오카야마</a></td>
+              <td><a href="#">오키나와</a></td>
+            </tr>
+            <tr>
+              <th rowspan="3">중국</th>
+              <td><a href="#">북경</a></td>
+              <td><a href="#">상해(푸동)</a></td>
+              <td><a href="#">상해(홍차오)</a></td>
+              <td><a href="#">광주(광저우)</a></td>
+              <td><a href="#">청도</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">대련</a></td>
+              <td><a href="#">심양</a></td>
+              <td><a href="#">심천</a></td>
+              <td><a href="#">연길</a></td>
+              <td><a href="#">연대</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">위해</a></td>
+              <td><a href="#">장춘</a></td>
+              <td><a href="#">천진</a></td>
+              <td><a href="#">하얼빈</a></td>
+              <td><a href="#">항주</a></td>
+            </tr>
+            <tr>
+              <th rowspan="4">아시아</th>
+              <td><a href="#">방콕</a></td>
+              <td><a href="#">마닐라</a></td>
+              <td><a href="#">싱가포르</a></td>
+              <td><a href="#">타이페이</a></td>
+              <td><a href="#">홍콩</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">나트랑</a></td>
+              <td><a href="#">다낭</a></td>
+              <td><a href="#">델리</a></td>
+              <td><a href="#">마카오</a></td>
+              <td><a href="#">발리</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">비엔티엔</a></td>
+              <td><a href="#">세부</a></td>
+              <td><a href="#">자카르타</a></td>
+              <td><a href="#">코타키나발루</a></td>
+              <td><a href="#">쿠알라룸푸르</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">클락</a></td>
+              <td><a href="#">푸켓</a></td>
+              <td><a href="#">프놈펜</a></td>
+              <td><a href="#">하노이</a></td>
+              <td><a href="#">호치민</a></td>
+            </tr>
+            <tr>
+              <th rowspan="3">미주</th>
+              <td><a href="#">LA</a></td>
+              <td><a href="#">뉴욕</a></td>
+              <td><a href="#">뉴욕(뉴왁)</a></td>
+              <td><a href="#">뉴욕(라과디아)</a></td>
+              <td><a href="#">호놀룰루</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">라스베가스</a></td>
+              <td><a href="#">샌프란시스코</a></td>
+              <td><a href="#">시애틀</a></td>
+              <td><a href="#">시카고(오헤어)</a></td>
+              <td><a href="#">워싱턴(덜러스)</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">아틀랜타</a></td>
+              <td><a href="#">달라스</a></td>
+              <td><a href="#">디트로이트</a></td>
+              <td><a href="#">보스톤</a></td>
+              <td><a href="#">미니에폴리스</a></td>
+            </tr>
+            <tr>
+              <th rowspan="1">캐나다</th>
+              <td><a href="#">밴쿠버</a></td>
+              <td><a href="#">토론토</a></td>
+              <td><a href="#">몬트리올</a></td>
+              <td><a href="#">에드먼튼</a></td>
+              <td><a href="#">캘거리</a></td>
+            </tr>
+            <tr>
+              <th rowspan="1">중남미</th>
+              <td><a href="#">리마</a></td>
+              <td><a href="#">멕시코시티</a></td>
+              <td><a href="#">몬테레이</a></td>
+              <td><a href="#">상파울로</a></td>
+              <td><a href="#">칸쿤</a></td>
+            </tr>
+            <tr>
+              <th rowspan="4">유럽</th>
+              <td><a href="#">런던(히드로)</a></td>
+              <td><a href="#">로마</a></td>
+              <td><a href="#">파리</a></td>
+              <td><a href="#">바르셀로나</a></td>
+              <td><a href="#">마드리드</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">모스크바</a></td>
+              <td><a href="#">뮌헨</a></td>
+              <td><a href="#">밀라노</a></td>
+              <td><a href="#">베네치아</a></td>
+              <td><a href="#">부다페스트</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">블라디보스톡</a></td>
+              <td><a href="#">비엔나(빈)</a></td>
+              <td><a href="#">암스테르담</a></td>
+              <td><a href="#">이스탄불</a></td>
+              <td><a href="#">자그레브</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">취리히</a></td>
+              <td><a href="#">코펜하겐</a></td>
+              <td><a href="#">프라하</a></td>
+              <td><a href="#">프랑크푸르트</a></td>
+              <td><a href="#">헬싱키</a></td>
+            </tr>
+            <tr>
+              <th rowspan="1">대양주</th>
+              <td><a href="#">괌</a></td>
+              <td><a href="#">사이판</a></td>
+              <td><a href="#">시드니</a></td>
+              <td><a href="#">브리즈번</a></td>
+              <td><a href="#">오클랜드</a></td>
+            </tr>
+            <tr>
+              <th rowspan="2">중동<br>아프리카</th>
+              <td><a href="#">나이로비</a></td>
+              <td><a href="#">다에살렘</a></td>
+              <td><a href="#">두바이</a></td>
+              <td><a href="#">아디스아바바</a></td>
+              <td><a href="#">아부다비</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">요하네스버그</a></td>
+              <td><a href="#">카이로</a></td>
+              <td><a href="#">케이프타운</a></td>
+              <td><a href="#">테헤란</a></td>
+              <td><a href="#">텔아비브</a></td>
+            </tr>
+          </table>
+        </div>
+
+
+
+
+        <h3>날짜 선택</h3>
+        <div class="select_box day_pick">
+          <div class="select_box_left">
+            <input type="text" id="from_date" placeholder="출발일 선택">
+          </div>
+          <div class="return">
+            <input class="return_left" type="text" id="to_date" placeholder="귀국일 선택">
+            <button type="button" class="return_right">미정</button>
+          </div>
+        </div>
+        <h3>인원 선택</h3>
+        <div class="select_person">
+          <div>
+            <select>
+              <option value="성인1명">성인1명</option>
+              <option value="성인2명">성인2명</option>
+              <option value="성인3명">성인3명</option>
+              <option value="성인4명">성인4명</option>
+              <option value="성인5명">성인5명</option>
+              <option value="성인6명">성인6명</option>
+              <option value="성인7명">성인7명</option>
+              <option value="성인8명">성인8명</option>
+              <option value="성인9명">성인9명</option>
+            </select>
+            <span>만 12세 이상</span>
+          </div>
+          <div>
+            <select>
+              <option value="아동1명">아동1명</option>
+              <option value="아동2명">아동2명</option>
+              <option value="아동3명">아동3명</option>
+              <option value="아동4명">아동4명</option>
+              <option value="아동5명">아동5명</option>
+              <option value="아동6명">아동6명</option>
+              <option value="아동7명">아동7명</option>
+              <option value="아동8명">아동8명</option>
+              <option value="아동9명">아동9명</option>
+            </select>
+            <span>만 2세~11세</span>
+          </div>
+          <div>
+            <select>
+              <option value="유아1명">유아1명</option>
+              <option value="유아2명">유아2명</option>
+              <option value="유아3명">유아3명</option>
+              <option value="유아4명">유아4명</option>
+              <option value="유아5명">유아5명</option>
+              <option value="유아6명">유아6명</option>
+              <option value="유아7명">유아7명</option>
+              <option value="유아8명">유아8명</option>
+              <option value="유아9명">유아9명</option>
+            </select>
+            <span>만 2세 미만</span>
+          </div>
+        </div>
+        <div class="select_box search_button">
+          <p><a href="#">여행지 검색하러 가기</a></p>
+          <a href="#" class="go_search">검색하기</a>
+        </div>
+
       </div>
+    </form>
+    <div class="seach_icon">
+      <ul>
+        <li>
+          <a href="#"><img src="img/search1.png">비행기</a>
+        </li>
+        <li>
+          <a href="#"><img src="img/search2.png">호텔</a>
+        </li>
+        <li>
+          <a href="#"><img src="img/search3.png">렌트카</a>
+        </li>
+        <li>
+          <a href="#"><img src="img/search4.png">티켓</a>
+        </li>
+        <li>
+          <a href="#"><img src="img/search5.png">이벤트</a>
+        </li>
+      </ul>
     </div>
   </div>
+</div>
 </section>
 <!-- 메인 전체에 링크를 잡아서 텍스트를 엡솔로 움직일지,
 banner를 기준으로 왼쪽,오른쪽 으로 배너를 나눠서 오른쪽에 글씨창을 쓰고 자세히 보기
@@ -530,286 +531,286 @@ banner를 기준으로 왼쪽,오른쪽 으로 배너를 나눠서 오른쪽에 
 
 <!-- quick menu -->
 <aside>
-  <div class="quick_close">
-    <ul>
-      <li class="pick">
-        <button><i class="fas fa-heart"></i><span class="blind">퀵오픈</span></button>
-      </li>
-      <li>
-          <a href="#" class="Top"><i class="fas fa-angle-up"></i>TOP</a>
-      </li>
-    </ul>
-  </div>
-  <div class="quick_open">
-    <button><i class="fas fa-times"></i><span class="blind">퀵닫기</span></button>
-    <ul>
-      <li>
-        <a href="#" class="quick_title quick_login">로그인</a>
-        <div class="recent_product">
-          <!-- 상품이 없을 경우 -->
-          <p>로그인하시면 더편리하게 <br>즐기실수 <br>있습니다.</p>
-          <!-- 상품이 있을 경우 -->
-          <a href="#" class="quick_open_img"><img src="img/side1.jpg" alt="부산출발 괌"></a>
-        </div>
-      </li>
-      <li>
-        <a href="#" class="quick_title">찜한상품<i class="far fa-heart"></i></a>
-        <div class="like_product">
-          <p>로그인하시면 찜한 상품을 보실 수 <br>있습니다.</p>
-          <!-- 상품이 있을 경우 -->
-          <a href="#" class="quick_open_img"><img src="img/side2.jpg" alt="부산출발 괌"></a>
-       </div>
-      </li>
-      <li>
-        <a href="#" class="quick_title quick_top">TOP<i class="fas fa-angle-up"></i></a>
-      </li>
-    </ul>
-  </div>
+<div class="quick_close">
+  <ul>
+    <li class="pick">
+      <button><i class="fas fa-heart"></i><span class="blind">퀵오픈</span></button>
+    </li>
+    <li>
+        <a href="#" class="Top"><i class="fas fa-angle-up"></i>TOP</a>
+    </li>
+  </ul>
+</div>
+<div class="quick_open">
+  <button><i class="fas fa-times"></i><span class="blind">퀵닫기</span></button>
+  <ul>
+    <li>
+      <a href="#" class="quick_title quick_login">로그인</a>
+      <div class="recent_product">
+        <!-- 상품이 없을 경우 -->
+        <p>로그인하시면 더편리하게 <br>즐기실수 <br>있습니다.</p>
+        <!-- 상품이 있을 경우 -->
+        <a href="#" class="quick_open_img"><img src="img/side1.jpg" alt="부산출발 괌"></a>
+      </div>
+    </li>
+    <li>
+      <a href="#" class="quick_title">찜한상품<i class="far fa-heart"></i></a>
+      <div class="like_product">
+        <p>로그인하시면 찜한 상품을 보실 수 <br>있습니다.</p>
+        <!-- 상품이 있을 경우 -->
+        <a href="#" class="quick_open_img"><img src="img/side2.jpg" alt="부산출발 괌"></a>
+     </div>
+    </li>
+    <li>
+      <a href="#" class="quick_title quick_top">TOP<i class="fas fa-angle-up"></i></a>
+    </li>
+  </ul>
+</div>
 </aside>
 <!-- quick menu
 -------------------------------------------------------->
 
 <section class="contents">
-  <article class="online_product">
+<article class="online_product">
+  <div class="center">
+    <h2>온라인 전용 특가</h2>
+    <ul class="img_banner">
+      <li class="mr_40">
+        <div class="item">
+          <div class="shadow">
+            <a href="#" class="btn_more">자세히보기</a>
+          </div>
+        </div>
+      </li>
+      <li class="mr_40">
+        <div class="item">
+          <div class="shadow">
+            <a href="#" class="btn_more">자세히보기</a>
+          </div>
+        </div>
+      </li>
+      <li class="mr_40">
+        <div class="item">
+          <div class="shadow">
+            <a href="#" class="btn_more">자세히보기</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div class="shadow">
+            <a href="#" class="btn_more">자세히보기</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</article>
+<!-- 온라인전용특가
+---------------------------------------------------------------------->
+<article class="recommend_trip">
+  <div class="center">
+    <h2>나라별 추천여행지</h2>
+  </div>
+
+  <nav class="tab_nav">
     <div class="center">
-      <h2>온라인 전용 특가</h2>
-      <ul class="img_banner">
-        <li class="mr_40">
-          <div class="item">
-    				<div class="shadow">
-              <a href="#" class="btn_more">자세히보기</a>
+      <ul>
+        <li class="active"><a href="#">동남아/대만</a></li>
+        <li><a href="#">중국/홍콩</a></li>
+        <li><a href="#" data-size="small">일본</a></li>
+        <li><a href="#" data-size="small">남태평양</a></li>
+        <li><a href="#">유럽/두바이</a></li>
+        <li><a href="#">미주/하와이</a></li>
+        <li><a href="#" >부산출발</a></li>
+        <li><a href="#" >지방출발</a></li>
+        <li><a href="#" data-size="small">국내여행</a></li>
+        <li><a href="#" data-size="small">테마여행</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="tab_contents">
+    <div class="center">
+      <div class="tab_title">
+        <h3 class="main_name"><span>동남아</span><span>대만</span></h3>
+        <span class="line"></span>
+        <p>
+          가깝고,휴양,관광 모두 다<br>
+          만족할 수 있는
+        </p>
+      </div>
+      <ul>
+        <li class="move mr90">
+          <div class="wrap">
+            <div class="img_box">
+              <div class="over">
+                <span>블루라군을 찾아</span>
+                <a href="#" class="btn_more">자세히보기</a>
+              </div>
+            </div>
+            <div class="text_box">
+              <p>
+                친구,가족,연인<br>
+                그 누구와 가도 즐거운
+              </p>
+              <b>라오스</b>
             </div>
           </div>
         </li>
-        <li class="mr_40">
-          <div class="item">
-    				<div class="shadow">
-              <a href="#" class="btn_more">자세히보기</a>
+
+        <li class="move mr90">
+          <div class="wrap">
+            <div class="img_box">
+              <div class="over">
+                <span>황홀한 선셋</span>
+                <a href="#" class="btn_more">자세히보기</a>
+              </div>
+            </div>
+            <div class="text_box">
+              <p>
+                아름다운 바다와 선셋<br>
+                모든것이 완벽한
+              </p>
+              <b>코타키나발루</b>
             </div>
           </div>
         </li>
-        <li class="mr_40">
-          <div class="item">
-    				<div class="shadow">
-              <a href="#" class="btn_more">자세히보기</a>
+        <li class="move">
+          <div class="wrap">
+            <div class="img_box">
+              <div class="over">
+                <span>되 찾은 화이트비치</span>
+                <a href="#" class="btn_more">자세히보기</a>
+              </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <div class="item">
-    				<div class="shadow">
-              <a href="#" class="btn_more">자세히보기</a>
+            <div class="text_box">
+              <p>
+                더욱 더 쾌적해지고<br>
+                깔끔해진
+              </p>
+              <b>보라카이</b>
             </div>
           </div>
         </li>
       </ul>
     </div>
-  </article>
-  <!-- 온라인전용특가
-  ---------------------------------------------------------------------->
-  <article class="recommend_trip">
-    <div class="center">
-      <h2>나라별 추천여행지</h2>
-    </div>
+  </div>
 
-    <nav class="tab_nav">
-      <div class="center">
+</article>
+
+
+<!-- 이벤트&홈쇼핑 -->
+<article class="event_shopping">
+  <div class="center">
+    <h2>이벤트&홈쇼핑</h2>
+    <div class="event">
+      <nav class="event_nav">
+        <h3>BEST<br>이벤트상품</h3>
         <ul>
-          <li class="active"><a href="#">동남아/대만</a></li>
-          <li><a href="#">중국/홍콩</a></li>
-          <li><a href="#" data-size="small">일본</a></li>
-          <li><a href="#" data-size="small">남태평양</a></li>
-          <li><a href="#">유럽/두바이</a></li>
-          <li><a href="#">미주/하와이</a></li>
-          <li><a href="#" >부산출발</a></li>
-          <li><a href="#" >지방출발</a></li>
-          <li><a href="#" data-size="small">국내여행</a></li>
-          <li><a href="#" data-size="small">테마여행</a></li>
-
+          <li><a href="#" class="active2">선불카드혜택<i class="fas fa-angle-right"></i></a></li>
+          <li><a href="#">19주년행사<i class="fas fa-angle-right"></i></a></li>
+          <li><a href="#">신라면세혜택<i class="fas fa-angle-right"></i></a></li>
+          <li><a href="#">여행자후기<i class="fas fa-angle-right"></i></a></li>
         </ul>
-      </div>
-    </nav>
-
-    <div class="tab_contents">
-      <div class="center">
-        <div class="tab_title">
-          <h3 class="main_name"><span>동남아</span><span>대만</span></h3>
-          <span class="line"></span>
-          <p>
-            가깝고,휴양,관광 모두 다<br>
-            만족할 수 있는
-          </p>
-        </div>
-        <ul>
-          <li class="move mr90">
-            <div class="wrap">
-              <div class="img_box">
-                <div class="over">
-                  <span>블루라군을 찾아</span>
-                  <a href="#" class="btn_more">자세히보기</a>
-                </div>
-              </div>
-              <div class="text_box">
-                <p>
-                  친구,가족,연인<br>
-                  그 누구와 가도 즐거운
-                </p>
-                <b>라오스</b>
-              </div>
-            </div>
-          </li>
-
-          <li class="move mr90">
-            <div class="wrap">
-              <div class="img_box">
-                <div class="over">
-                  <span>황홀한 선셋</span>
-                  <a href="#" class="btn_more">자세히보기</a>
-                </div>
-              </div>
-              <div class="text_box">
-                <p>
-                  아름다운 바다와 선셋<br>
-                  모든것이 완벽한
-                </p>
-                <b>코타키나발루</b>
-              </div>
-            </div>
-          </li>
-          <li class="move">
-            <div class="wrap">
-              <div class="img_box">
-                <div class="over">
-                  <span>되 찾은 화이트비치</span>
-                  <a href="#" class="btn_more">자세히보기</a>
-                </div>
-              </div>
-              <div class="text_box">
-                <p>
-                  더욱 더 쾌적해지고<br>
-                  깔끔해진
-                </p>
-                <b>보라카이</b>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-  </article>
-
-
-  <!-- 이벤트&홈쇼핑 -->
-  <article class="event_shopping">
-    <div class="center">
-      <h2>이벤트&홈쇼핑</h2>
-      <div class="event">
-        <nav class="event_nav">
-          <h3>BEST<br>이벤트상품</h3>
-          <ul>
-            <li><a href="#" class="active2">선불카드혜택<i class="fas fa-angle-right"></i></a></li>
-            <li><a href="#">19주년행사<i class="fas fa-angle-right"></i></a></li>
-            <li><a href="#">신라면세혜택<i class="fas fa-angle-right"></i></a></li>
-            <li><a href="#">여행자후기<i class="fas fa-angle-right"></i></a></li>
-          </ul>
-       </nav>
-       <div class="event_img">
-          <a href="#"><img src="img/event1.jpg" alt=""></a>
-       </div>
+     </nav>
+     <div class="event_img">
+        <a href="#"><img src="img/event1.jpg" alt=""></a>
      </div>
-      <!-- 왼쪽 이벤트 구역-->
+   </div>
+    <!-- 왼쪽 이벤트 구역-->
 
-      <div class="home_shopping">
-        <!-- swiper구조 넣기 -->
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <!-- 첫번째 슬라이드 -->
-            <div class="swiper-slide">
-            </div>
-            <!-- 두번째 슬라이드 -->
-            <div class="swiper-slide">
-            </div>
-            <!-- 세번째 슬라이드 -->
-            <div class="swiper-slide">
-            </div>
-            <!-- 네번째 슬라이드 -->
-            <div class="swiper-slide">
-            </div>
+    <div class="home_shopping">
+      <!-- swiper구조 넣기 -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- 첫번째 슬라이드 -->
+          <div class="swiper-slide">
           </div>
-          <div class="swiper-pagination"></div>
+          <!-- 두번째 슬라이드 -->
+          <div class="swiper-slide">
+          </div>
+          <!-- 세번째 슬라이드 -->
+          <div class="swiper-slide">
+          </div>
+          <!-- 네번째 슬라이드 -->
+          <div class="swiper-slide">
+          </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
-    <!-- 오른쪽 홈쇼핑 구역-->
-  </article>
-  <!-- aritcle 자체에 banner class 를 지정할지..? -->
-  <!-- 이벤트&홈쇼핑
-  ---------------------------------------------------------------------->
+  </div>
+  <!-- 오른쪽 홈쇼핑 구역-->
+</article>
+<!-- aritcle 자체에 banner class 를 지정할지..? -->
+<!-- 이벤트&홈쇼핑
+---------------------------------------------------------------------->
 </section>
 
 <!-- 이벤트 띠배너 -->
 <section class="banner">
-  <a href="#" class="footer_img"><img src="img/footerimg2.png" alt="호주여행이벤트"></a>
+<a href="#" class="footer_img"><img src="img/footerimg2.png" alt="호주여행이벤트"></a>
 </section>
 <!-- 이벤트 띠배너
- ---------------------------------------->
+---------------------------------------->
 <footer>
-  <div class="footer_top">
-    <div class="center">
-      <ul>
-        <li class="right_line">
-          <span class="title">온라인 투어 고객센터</span>
-          <span class="color">1544-3363</span>
-        </li>
-        <li  class="right_line">
-          <span class="title">온라인 투어 SNS</span>
-          <ul class="sns">
-            <li><a href="#" class="icon icon-google"><span class="blind">구글</span></a></li>
-            <li><a href="#" class="icon icon-youtube"><span class="blind">유투브</span></a></li>
-            <li><a href="#" class="icon icon-blog"><span class="blind">블로그</span></a></li>
-            <li><a href="#" class="icon icon-twitter"><span class="blind">트위터</span></a></li>
-            <li><a href="#" class="icon icon-facebook"><span class="blind">페이스북</span></a></li>
-          </ul>
-        </li>
-        <li>
-          <span class="title">공지사항</span>
-          <a href="#" class="online_pay"><small>온라인 페이 결제 이벤트 당첨자 발표</small></a>
-          <a href="#" class="more">더보기<i class="far fa-plus-square"></i></a>
-        </li>
-      </ul>
-    </div>
+<div class="footer_top">
+  <div class="center">
+    <ul>
+      <li class="right_line">
+        <span class="title">온라인 투어 고객센터</span>
+        <span class="color">1544-3363</span>
+      </li>
+      <li  class="right_line">
+        <span class="title">온라인 투어 SNS</span>
+        <ul class="sns">
+          <li><a href="#" class="icon icon-google"><span class="blind">구글</span></a></li>
+          <li><a href="#" class="icon icon-youtube"><span class="blind">유투브</span></a></li>
+          <li><a href="#" class="icon icon-blog"><span class="blind">블로그</span></a></li>
+          <li><a href="#" class="icon icon-twitter"><span class="blind">트위터</span></a></li>
+          <li><a href="#" class="icon icon-facebook"><span class="blind">페이스북</span></a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="title">공지사항</span>
+        <a href="#" class="online_pay"><small>온라인 페이 결제 이벤트 당첨자 발표</small></a>
+        <a href="#" class="more">더보기<i class="far fa-plus-square"></i></a>
+      </li>
+    </ul>
   </div>
-  <div class="footer_bottom">
-    <div class="center">
-      <ul class="etc_nav">
-        <li class="line title"><a href="#">회사소개</a></li>
-        <li class="ml60 line title"><a href="#">광고/제휴소개</a></li>
-        <li class="ml60 line title"><a href="#">여행/서비스약관</a></li>
-        <li class="ml60 line title"><a href="#">여행자보험</a></li>
-        <li class="ml60 line title"><a href="#">개인정보처리방침</a></li>
-        <li class="ml60 title"><a href="#">책임한계와 법적고지</a></li>
-        <li class="title"><a href="#">이메일/고객정보추출거부정책</a></li>
-      </ul>
-      <div class="etc_nav_wrap">
-        <img src="img/logo2.png" alt="로고">
-        <address>
-          <p>
-          (주)온라인투어┃대표:김진국┃주소:(03161) 서울특별시 종로구 인사동 5길 41<br>
-          사업자 등록번호: 102-81-39440┃통신판매업신고번호: 종로 01-1806호┃사업자정보확인┃관광사업자 등록번호:<br>
-          제1993-000006호┃영업보증보험: 22억1천만원 가입</p>
-          <p>고객센터: 1577-1233┃팩스: 02-734-0392┃개인정보 보호책임자: 박영학</p>
-          <p>부득이한 사정에 의해 여행일정이 변경되는 경우 여행자의 사전 동의를 받습니다.</p>
-          <small>COPYRIGHT(C) HANATOUR SERVICE INC. ALL RIGHTS RESERVED</small>
-        </address>
-        <div class="mark">
-          <img src="img/footerimg1.png" alt="우수인증마크">
-        </div>
+</div>
+<div class="footer_bottom">
+  <div class="center">
+    <ul class="etc_nav">
+      <li class="line title"><a href="#">회사소개</a></li>
+      <li class="ml60 line title"><a href="#">광고/제휴소개</a></li>
+      <li class="ml60 line title"><a href="#">여행/서비스약관</a></li>
+      <li class="ml60 line title"><a href="#">여행자보험</a></li>
+      <li class="ml60 line title"><a href="#">개인정보처리방침</a></li>
+      <li class="ml60 title"><a href="#">책임한계와 법적고지</a></li>
+      <li class="title"><a href="#">이메일/고객정보추출거부정책</a></li>
+    </ul>
+    <div class="etc_nav_wrap">
+      <img src="img/logo2.png" alt="로고">
+      <address>
+        <p>
+        (주)온라인투어┃대표:김진국┃주소:(03161) 서울특별시 종로구 인사동 5길 41<br>
+        사업자 등록번호: 102-81-39440┃통신판매업신고번호: 종로 01-1806호┃사업자정보확인┃관광사업자 등록번호:<br>
+        제1993-000006호┃영업보증보험: 22억1천만원 가입</p>
+        <p>고객센터: 1577-1233┃팩스: 02-734-0392┃개인정보 보호책임자: 박영학</p>
+        <p>부득이한 사정에 의해 여행일정이 변경되는 경우 여행자의 사전 동의를 받습니다.</p>
+        <small>COPYRIGHT(C) HANATOUR SERVICE INC. ALL RIGHTS RESERVED</small>
+      </address>
+      <div class="mark">
+        <img src="img/footerimg1.png" alt="우수인증마크">
       </div>
     </div>
   </div>
-  <!-- 하단 경계선 긴거 어떻게 배치할지..? (배너를 두단으로 나눠서 banner를 한번 더 넣어줄지
-  )h3자체를 인라인으로 변경가능여부, 우수상품구역 Png 파일없음/삭제할지 -->
+</div>
+<!-- 하단 경계선 긴거 어떻게 배치할지..? (배너를 두단으로 나눠서 banner를 한번 더 넣어줄지
+)h3자체를 인라인으로 변경가능여부, 우수상품구역 Png 파일없음/삭제할지 -->
 </footer>
 
 </body>

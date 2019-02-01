@@ -39,52 +39,48 @@ $(".sarch_select_button button").on("click",function()
     $(".return_left").next().show();
   }
 });
+
+var clickCheck = false;
+
 $(".return_right").on("click",function()
 {
-  var c=$(this).prop('disabled', true);
-  console.log(c);
-  // $(".return_left").prop('disabled', ! $(".return_left").prop('disabled'));
-  // $(".return_left").next().hide();
+
+  if(!clickCheck){
+    $(".return_left").prop('disabled',true);
+    $(".return img").hide();
+    clickCheck = true;
+  }else{
+    $(".return_left").prop('disabled',false);
+    $(".return img").show();
+    clickCheck = false;
+  }
 });
-
-// $(".return_right").on("click",function()
-// {
-//   $(".return_left").prop('disabled', ! $(".return_left").prop('disabled'));
-//   $(".return_left").next().hide();
-// });
-
-
-
 
 
 // 여행지검색창 팝업
-$(".select_box_left i").on("click",function()
+var inputId;
+$(".select_box_left a, .select_box_right a").on("click",function()
 {
+  inputId=$(this).attr('href');
   $(".city_popup").show();
-  $(".city_list td a").on("click", function()
-  {
-    var a=$(this).text();
-    console.log(a);
-    $("#start_city").val(a);
-  });
+  return false;
 });
+
 $(".city_popup button, .city_list td a").on("click",function()
 {
   $(".city_popup").hide();
 });
 
-
-$(".select_box_right i").on("click",function()
+$(".city_list td a").on("click", function()
 {
-  $(".city_popup").show();
-  $(".city_list td a").on("click", function()
-  {
-    var b=$(this).text();
-    console.log(b);
-    $("#arrive_city").val(b);
-  });
+  var city=$(this).text();
+  console.log(inputId);
+  if(inputId=='#start_city'){
+    $("#start_city").val(city);
+  }else{
+    $("#arrive_city").val(city);
+  }
 });
-
 
 // datepicker
 $( "#from_date, #to_date" ).datepicker({
