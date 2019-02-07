@@ -231,7 +231,7 @@ dd.color:nth-of-type(1) {
   position: absolute;
   top:600px;
   left: 1205px;
-  z-index: 100;
+  z-index: 5;
 }
 .main_slide .swiper-pagination-bullet {
     margin-left: 10px;
