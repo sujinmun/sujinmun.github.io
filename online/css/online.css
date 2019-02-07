@@ -400,7 +400,7 @@ button.ad_popup_close {
   outline: 1px solid #333;
   display: none;
 }
-.city_popup p {
+.city_popup caption {
   font-size: 15px;
   font-weight: bold;
   padding-top:5px;
