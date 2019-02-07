@@ -409,7 +409,7 @@ button.ad_popup_close {
   border-bottom: 1px solid gray;
   color: #40b4e3;
   position: relative;
-  text-align: left;
+  text-align:left;
 }
 .city_popup button {
   background: none;
