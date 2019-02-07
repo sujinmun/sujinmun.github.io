@@ -143,11 +143,11 @@ $.datepicker.setDefaults({
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    // effect: 'fade',
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
+      effect: 'fade',
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
   });
 
   var itemImg=[

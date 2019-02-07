@@ -1088,6 +1088,7 @@ footer {
 }
 .etc_nav li a:hover {
   text-decoration: underline;
+  color: black;
 }
 .ml60 {
   margin-left: 27px;
