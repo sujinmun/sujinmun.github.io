@@ -1074,10 +1074,10 @@ footer {
   text-decoration: underline;
 }
 .ml60 {
-  margin-left: 33px;
+  margin-left: 27.5px;
 }
 .etc_nav li.line::after {
-  content: "";height:20px; border:0.5px solid gray;margin-left: 33px
+  content: "";height:20px; border:0.5px solid gray;margin-left: 27.5px
 }
 .etc_nav_wrap {
   height: 210px;
