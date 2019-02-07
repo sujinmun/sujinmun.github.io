@@ -41,6 +41,7 @@ $(".sarch_select_button button").on("click",function()
 });
 
 var clickCheck = false;
+// 비활성화가 되기전의 상태를 만들어줌
 
 $(".return_right").on("click",function()
 {
@@ -48,11 +49,13 @@ $(".return_right").on("click",function()
   if(!clickCheck){
     $(".return_left").prop('disabled',true);
     $(".return img").hide();
-    clickCheck = true;
+    // clickCheck = true;
+    // 활성화
   }else{
     $(".return_left").prop('disabled',false);
     $(".return img").show();
-    clickCheck = false;
+    // clickCheck = false;
+    // 비활성화
   }
 });
 
@@ -65,7 +68,7 @@ $(".select_box_left a, .select_box_right a").on("click",function()
   $(".city_popup").show();
   return false;
 });
-
+// 출발도시의팝업인지, 도착도시의 팝업인지 알기위한 함수
 $(".city_popup button, .city_list td a").on("click",function()
 {
   $(".city_popup").hide();
@@ -74,7 +77,7 @@ $(".city_popup button, .city_list td a").on("click",function()
 $(".city_list td a").on("click", function()
 {
   var city=$(this).text();
-  console.log(inputId);
+  // console.log(inputId);
   if(inputId=='#start_city'){
     $("#start_city").val(city);
   }else{
