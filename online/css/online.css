@@ -1024,6 +1024,22 @@ footer {
 .right_line {
   border-right: 1.2px solid gray;
 }
+.customer_service span {
+  height: 100%;
+  display: inline-block;
+  line-height: 70px;
+  float: left;
+  padding-bottom: 25px;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+.right_line .call::before {
+  content: "";
+  width:40px;
+  height: 100%;
+  display: inline-block;
+  background:url(../img/call.png) no-repeat center;
+}
 .footer_top > .center > ul > li:nth-child(2) {
   width: 35%;
 }
