@@ -1094,6 +1094,8 @@ footer {
   float: right;
   font-weight: bold;
   font-style: normal;
+  padding-left: 20px;
+  box-sizing: border-box;
 }
 .etc_nav_wrap address p {
   margin-bottom: 10px;
@@ -1105,7 +1107,7 @@ footer {
 }
 .mark img {
   float: right;
-  width: 450px;
-  height: 90px;
-  margin-top: -80px;
+  width: 350px;
+  height: 160px;
+  margin-top: -180px;
 }
