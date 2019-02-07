@@ -1070,6 +1070,9 @@ footer {
   float: left;
   line-height: 60px;
 }
+.etc_nav li:hover {
+  text-decoration: underline;
+}
 .ml60 {
   margin-left: 33px;
 }
