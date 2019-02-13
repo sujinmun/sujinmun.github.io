@@ -191,10 +191,10 @@ a:not([href]):not([tabindex]) {
 
 .btn-download:before {
     position: absolute;
-    content: '\f407';
+    content: "\f3fa";
     font-family: 'Ionicons';
     top: 12px;
-    right: 16px;
+    right: 15px;
     font-size: 24px;
 }
 
