@@ -49,12 +49,12 @@ $(".return_right").on("click",function()
   if(!clickCheck){
     $(".return_left").prop('disabled',true);
     $(".return img").hide();
-    // clickCheck = true;
+    clickCheck = true;
     // 활성화
   }else{
     $(".return_left").prop('disabled',false);
     $(".return img").show();
-    // clickCheck = false;
+    clickCheck = false;
     // 비활성화
   }
 });
