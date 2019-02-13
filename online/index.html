@@ -222,306 +222,311 @@
     </div>
   </div>
 </div>
-<div class="swiper-pagination"></div>
-
-<!-- 여행지 검색 -->
 <div class="center">
-  <div class="ad_popup">
-    <a href="#" class="ad_popup_img"><img src="img/adimg1.jpg" alt="여유와 힐링의 도시,마이애미"></a>
-    <button class="ad_popup_close"><i class="fas fa-times"></i></button>
+  <div class="text_box">
+    <div class="swiper-pagination"></div>
   </div>
-  <div class="search_area">
-    <form action="#">
-      <h2>여행지검색</h2>
-      <div class="sarch_select">
-        <div class="sarch_select_button">
-          <button type="button" class="round_trip active3">왕복</button>
-          <button type="button" class="one_way">편도</button>
-        </div>
-        <h3>도시명 검색</h3>
-        <div class="select_box city_name">
-          <div class="select_box_left">
-            <input type="text" title="출발도시입력" id="start_city" placeholder="출발도시(도시명 입력)">
-            <a href="#start_city"><i class="fas fa-map-marker-alt"></i></a>
+</div>
+<!-- 여행지 검색 -->
+<div class="search">
+  <div class="center">
+    <div class="ad_popup">
+      <a href="#" class="ad_popup_img"><img src="img/adimg1.jpg" alt="여유와 힐링의 도시,마이애미"></a>
+      <button class="ad_popup_close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="search_area">
+      <form action="#">
+        <h2>여행지검색</h2>
+        <div class="sarch_select">
+          <div class="sarch_select_button">
+            <button type="button" class="round_trip active3">왕복</button>
+            <button type="button" class="one_way">편도</button>
           </div>
-          <div class="select_box_right">
-            <input type="text" title="도착도시입력" id="arrive_city" placeholder="도착도시(도시명 입력)">
-            <a href="#arrive_city"><i class="fas fa-map-marker-alt"></i></a>
+          <h3>도시명 검색</h3>
+          <div class="select_box city_name">
+            <div class="select_box_left">
+              <input type="text" title="출발도시입력" id="start_city" placeholder="출발도시(도시명 입력)">
+              <a href="#start_city"><i class="fas fa-map-marker-alt"></i></a>
+            </div>
+            <div class="select_box_right">
+              <input type="text" title="도착도시입력" id="arrive_city" placeholder="도착도시(도시명 입력)">
+              <a href="#arrive_city"><i class="fas fa-map-marker-alt"></i></a>
+            </div>
           </div>
-        </div>
-        <div class="city_popup">
-          <!-- <p>주요도시 바로선택
-            <button><i class="fas fa-times"></i></button>
-          </p> -->
-          <table class="city_list">
-            <colgroup>
-              <col width="*">
-              <col width="90">
-              <col width="90">
-              <col width="90">
-              <col width="90">
-              <col width="90">
-            </colgroup>
-            <caption>주요도시 바로선택
+          <div class="city_popup">
+            <!-- <p>주요도시 바로선택
               <button><i class="fas fa-times"></i></button>
-            </caption>
-            <tr>
-              <th rowspan="2">국내</th>
-              <td><a href="#">서울/인천<br>(SEL/ICN)</a></td>
-              <td><a href="#">인천(ICN)</a></td>
-              <td><a href="#">김포(GMP)</a></td>
-              <td><a href="#">부산</a></td>
-              <td><a href="#">대구</a></td>
-            </tr>
-            <tr>
-              <td><a href="#">청주</a></td>
-              <td><a href="#">제주</a></td>
-              <td><a href="#">무안</a></td>
-              <td><a href="#">광주</a></td>
-              <td><a href="#">울산</a></td>
-            </tr>
-            <tr>
-              <th rowspan="2">일본</th>
-              <td><a href="#">도쿄(전체)</a></td>
-              <td><a href="#">도쿄(나리타)</a></td>
-              <td><a href="#">도쿄(하네다)</a></td>
-              <td><a href="#">오사카(간사이)</a></td>
-              <td><a href="#">후쿠오카</a></td>
-            </tr>
-            <tr>
-              <td><a href="#">가고시마</a></td>
-              <td><a href="#">나고야</a></td>
-              <td><a href="#">삿포로</a></td>
-              <td><a href="#">오카야마</a></td>
-              <td><a href="#">오키나와</a></td>
-            </tr>
-            <tr>
-              <th rowspan="3">중국</th>
-              <td><a href="#">북경</a></td>
-              <td><a href="#">상해(푸동)</a></td>
-              <td><a href="#">상해(홍차오)</a></td>
-              <td><a href="#">광주(광저우)</a></td>
-              <td><a href="#">청도</a></td>
-            </tr>
-            <tr>
-              <td><a href="#">대련</a></td>
-              <td><a href="#">심양</a></td>
-              <td><a href="#">심천</a></td>
-              <td><a href="#">연길</a></td>
-              <td><a href="#">연대</a></td>
-            </tr>
-            <tr>
-              <td><a href="#">위해</a></td>
-              <td><a href="#">장춘</a></td>
-              <td><a href="#">천진</a></td>
-              <td><a href="#">하얼빈</a></td>
-              <td><a href="#">항주</a></td>
-            </tr>
-            <tr>
-              <th rowspan="4">아시아</th>
-              <td><a href="#">방콕</a></td>
-              <td><a href="#">마닐라</a></td>
-              <td><a href="#">싱가포르</a></td>
-              <td><a href="#">타이페이</a></td>
-              <td><a href="#">홍콩</a></td>
-            </tr>
-            <tr>
-              <td><a href="#">나트랑</a></td>
-              <td><a href="#">다낭</a></td>
-              <td><a href="#">델리</a></td>
-              <td><a href="#">마카오</a></td>
-              <td><a href="#">발리</a></td>
-            </tr>
-            <tr>
-              <td><a href="#">비엔티엔</a></td>
-              <td><a href="#">세부</a></td>
-              <td><a href="#">자카르타</a></td>
-              <td><a href="#">코타키나발루</a></td>
-              <td><a href="#">쿠알라룸푸르</a></td>
-            </tr>
-            <tr>
-              <td><a href="#">클락</a></td>
-              <td><a href="#">푸켓</a></td>
-              <td><a href="#">프놈펜</a></td>
-              <td><a href="#">하노이</a></td>
-              <td><a href="#">호치민</a></td>
-            </tr>
-            <tr>
-              <th rowspan="3">미주</th>
-              <td><a href="#">LA</a></td>
-              <td><a href="#">뉴욕</a></td>
-              <td><a href="#">뉴욕(뉴왁)</a></td>
-              <td><a href="#">뉴욕(라과디아)</a></td>
-              <td><a href="#">호놀룰루</a></td>
-            </tr>
-            <tr>
-              <td><a href="#">라스베가스</a></td>
-              <td><a href="#">샌프란시스코</a></td>
-              <td><a href="#">시애틀</a></td>
-              <td><a href="#">시카고(오헤어)</a></td>
-              <td><a href="#">워싱턴(덜러스)</a></td>
-            </tr>
-            <tr>
-              <td><a href="#">아틀랜타</a></td>
-              <td><a href="#">달라스</a></td>
-              <td><a href="#">디트로이트</a></td>
-              <td><a href="#">보스톤</a></td>
-              <td><a href="#">미니에폴리스</a></td>
-            </tr>
-            <tr>
-              <th rowspan="1">캐나다</th>
-              <td><a href="#">밴쿠버</a></td>
-              <td><a href="#">토론토</a></td>
-              <td><a href="#">몬트리올</a></td>
-              <td><a href="#">에드먼튼</a></td>
-              <td><a href="#">캘거리</a></td>
-            </tr>
-            <tr>
-              <th rowspan="1">중남미</th>
-              <td><a href="#">리마</a></td>
-              <td><a href="#">멕시코시티</a></td>
-              <td><a href="#">몬테레이</a></td>
-              <td><a href="#">상파울로</a></td>
-              <td><a href="#">칸쿤</a></td>
-            </tr>
-            <tr>
-              <th rowspan="4">유럽</th>
-              <td><a href="#">런던(히드로)</a></td>
-              <td><a href="#">로마</a></td>
-              <td><a href="#">파리</a></td>
-              <td><a href="#">바르셀로나</a></td>
-              <td><a href="#">마드리드</a></td>
-            </tr>
-            <tr>
-              <td><a href="#">모스크바</a></td>
-              <td><a href="#">뮌헨</a></td>
-              <td><a href="#">밀라노</a></td>
-              <td><a href="#">베네치아</a></td>
-              <td><a href="#">부다페스트</a></td>
-            </tr>
-            <tr>
-              <td><a href="#">블라디보스톡</a></td>
-              <td><a href="#">비엔나(빈)</a></td>
-              <td><a href="#">암스테르담</a></td>
-              <td><a href="#">이스탄불</a></td>
-              <td><a href="#">자그레브</a></td>
-            </tr>
-            <tr>
-              <td><a href="#">취리히</a></td>
-              <td><a href="#">코펜하겐</a></td>
-              <td><a href="#">프라하</a></td>
-              <td><a href="#">프랑크푸르트</a></td>
-              <td><a href="#">헬싱키</a></td>
-            </tr>
-            <tr>
-              <th rowspan="1">대양주</th>
-              <td><a href="#">괌</a></td>
-              <td><a href="#">사이판</a></td>
-              <td><a href="#">시드니</a></td>
-              <td><a href="#">브리즈번</a></td>
-              <td><a href="#">오클랜드</a></td>
-            </tr>
-            <tr>
-              <th rowspan="2">중동<br>아프리카</th>
-              <td><a href="#">나이로비</a></td>
-              <td><a href="#">다에살렘</a></td>
-              <td><a href="#">두바이</a></td>
-              <td><a href="#">아디스아바바</a></td>
-              <td><a href="#">아부다비</a></td>
-            </tr>
-            <tr>
-              <td><a href="#">요하네스버그</a></td>
-              <td><a href="#">카이로</a></td>
-              <td><a href="#">케이프타운</a></td>
-              <td><a href="#">테헤란</a></td>
-              <td><a href="#">텔아비브</a></td>
-            </tr>
-          </table>
+            </p> -->
+            <table class="city_list">
+              <colgroup>
+                <col width="*">
+                <col width="90">
+                <col width="90">
+                <col width="90">
+                <col width="90">
+                <col width="90">
+              </colgroup>
+              <caption>주요도시 바로선택
+                <button><i class="fas fa-times"></i></button>
+              </caption>
+              <tr>
+                <th rowspan="2">국내</th>
+                <td><a href="#">서울/인천<br>(SEL/ICN)</a></td>
+                <td><a href="#">인천(ICN)</a></td>
+                <td><a href="#">김포(GMP)</a></td>
+                <td><a href="#">부산</a></td>
+                <td><a href="#">대구</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">청주</a></td>
+                <td><a href="#">제주</a></td>
+                <td><a href="#">무안</a></td>
+                <td><a href="#">광주</a></td>
+                <td><a href="#">울산</a></td>
+              </tr>
+              <tr>
+                <th rowspan="2">일본</th>
+                <td><a href="#">도쿄(전체)</a></td>
+                <td><a href="#">도쿄(나리타)</a></td>
+                <td><a href="#">도쿄(하네다)</a></td>
+                <td><a href="#">오사카(간사이)</a></td>
+                <td><a href="#">후쿠오카</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">가고시마</a></td>
+                <td><a href="#">나고야</a></td>
+                <td><a href="#">삿포로</a></td>
+                <td><a href="#">오카야마</a></td>
+                <td><a href="#">오키나와</a></td>
+              </tr>
+              <tr>
+                <th rowspan="3">중국</th>
+                <td><a href="#">북경</a></td>
+                <td><a href="#">상해(푸동)</a></td>
+                <td><a href="#">상해(홍차오)</a></td>
+                <td><a href="#">광주(광저우)</a></td>
+                <td><a href="#">청도</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">대련</a></td>
+                <td><a href="#">심양</a></td>
+                <td><a href="#">심천</a></td>
+                <td><a href="#">연길</a></td>
+                <td><a href="#">연대</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">위해</a></td>
+                <td><a href="#">장춘</a></td>
+                <td><a href="#">천진</a></td>
+                <td><a href="#">하얼빈</a></td>
+                <td><a href="#">항주</a></td>
+              </tr>
+              <tr>
+                <th rowspan="4">아시아</th>
+                <td><a href="#">방콕</a></td>
+                <td><a href="#">마닐라</a></td>
+                <td><a href="#">싱가포르</a></td>
+                <td><a href="#">타이페이</a></td>
+                <td><a href="#">홍콩</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">나트랑</a></td>
+                <td><a href="#">다낭</a></td>
+                <td><a href="#">델리</a></td>
+                <td><a href="#">마카오</a></td>
+                <td><a href="#">발리</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">비엔티엔</a></td>
+                <td><a href="#">세부</a></td>
+                <td><a href="#">자카르타</a></td>
+                <td><a href="#">코타키나발루</a></td>
+                <td><a href="#">쿠알라룸푸르</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">클락</a></td>
+                <td><a href="#">푸켓</a></td>
+                <td><a href="#">프놈펜</a></td>
+                <td><a href="#">하노이</a></td>
+                <td><a href="#">호치민</a></td>
+              </tr>
+              <tr>
+                <th rowspan="3">미주</th>
+                <td><a href="#">LA</a></td>
+                <td><a href="#">뉴욕</a></td>
+                <td><a href="#">뉴욕(뉴왁)</a></td>
+                <td><a href="#">뉴욕(라과디아)</a></td>
+                <td><a href="#">호놀룰루</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">라스베가스</a></td>
+                <td><a href="#">샌프란시스코</a></td>
+                <td><a href="#">시애틀</a></td>
+                <td><a href="#">시카고(오헤어)</a></td>
+                <td><a href="#">워싱턴(덜러스)</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">아틀랜타</a></td>
+                <td><a href="#">달라스</a></td>
+                <td><a href="#">디트로이트</a></td>
+                <td><a href="#">보스톤</a></td>
+                <td><a href="#">미니에폴리스</a></td>
+              </tr>
+              <tr>
+                <th rowspan="1">캐나다</th>
+                <td><a href="#">밴쿠버</a></td>
+                <td><a href="#">토론토</a></td>
+                <td><a href="#">몬트리올</a></td>
+                <td><a href="#">에드먼튼</a></td>
+                <td><a href="#">캘거리</a></td>
+              </tr>
+              <tr>
+                <th rowspan="1">중남미</th>
+                <td><a href="#">리마</a></td>
+                <td><a href="#">멕시코시티</a></td>
+                <td><a href="#">몬테레이</a></td>
+                <td><a href="#">상파울로</a></td>
+                <td><a href="#">칸쿤</a></td>
+              </tr>
+              <tr>
+                <th rowspan="4">유럽</th>
+                <td><a href="#">런던(히드로)</a></td>
+                <td><a href="#">로마</a></td>
+                <td><a href="#">파리</a></td>
+                <td><a href="#">바르셀로나</a></td>
+                <td><a href="#">마드리드</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">모스크바</a></td>
+                <td><a href="#">뮌헨</a></td>
+                <td><a href="#">밀라노</a></td>
+                <td><a href="#">베네치아</a></td>
+                <td><a href="#">부다페스트</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">블라디보스톡</a></td>
+                <td><a href="#">비엔나(빈)</a></td>
+                <td><a href="#">암스테르담</a></td>
+                <td><a href="#">이스탄불</a></td>
+                <td><a href="#">자그레브</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">취리히</a></td>
+                <td><a href="#">코펜하겐</a></td>
+                <td><a href="#">프라하</a></td>
+                <td><a href="#">프랑크푸르트</a></td>
+                <td><a href="#">헬싱키</a></td>
+              </tr>
+              <tr>
+                <th rowspan="1">대양주</th>
+                <td><a href="#">괌</a></td>
+                <td><a href="#">사이판</a></td>
+                <td><a href="#">시드니</a></td>
+                <td><a href="#">브리즈번</a></td>
+                <td><a href="#">오클랜드</a></td>
+              </tr>
+              <tr>
+                <th rowspan="2">중동<br>아프리카</th>
+                <td><a href="#">나이로비</a></td>
+                <td><a href="#">다에살렘</a></td>
+                <td><a href="#">두바이</a></td>
+                <td><a href="#">아디스아바바</a></td>
+                <td><a href="#">아부다비</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">요하네스버그</a></td>
+                <td><a href="#">카이로</a></td>
+                <td><a href="#">케이프타운</a></td>
+                <td><a href="#">테헤란</a></td>
+                <td><a href="#">텔아비브</a></td>
+              </tr>
+            </table>
+          </div>
+
+
+
+
+          <h3>날짜 선택</h3>
+          <div class="select_box day_pick">
+            <div class="select_box_left">
+              <input type="text" title="출발일선택" id="from_date" placeholder="출발일 선택">
+            </div>
+            <div class="return">
+              <input class="return_left" type="text" title="귀국일 선택" id="to_date" placeholder="귀국일 선택">
+              <button type="button" class="return_right">미정</button>
+            </div>
+          </div>
+          <h3>인원 선택</h3>
+          <div class="select_person">
+            <div>
+              <select name="adult">
+                <option value="성인1명">성인1명</option>
+                <option value="성인2명">성인2명</option>
+                <option value="성인3명">성인3명</option>
+                <option value="성인4명">성인4명</option>
+                <option value="성인5명">성인5명</option>
+                <option value="성인6명">성인6명</option>
+                <option value="성인7명">성인7명</option>
+                <option value="성인8명">성인8명</option>
+                <option value="성인9명">성인9명</option>
+              </select>
+              <span>만 12세 이상</span>
+            </div>
+            <div>
+              <select name="child">
+                <option value="아동1명">아동1명</option>
+                <option value="아동2명">아동2명</option>
+                <option value="아동3명">아동3명</option>
+                <option value="아동4명">아동4명</option>
+                <option value="아동5명">아동5명</option>
+                <option value="아동6명">아동6명</option>
+                <option value="아동7명">아동7명</option>
+                <option value="아동8명">아동8명</option>
+                <option value="아동9명">아동9명</option>
+              </select>
+              <span>만 2세~11세</span>
+            </div>
+            <div>
+              <select name="kids">
+                <option value="유아1명">유아1명</option>
+                <option value="유아2명">유아2명</option>
+                <option value="유아3명">유아3명</option>
+                <option value="유아4명">유아4명</option>
+                <option value="유아5명">유아5명</option>
+                <option value="유아6명">유아6명</option>
+                <option value="유아7명">유아7명</option>
+                <option value="유아8명">유아8명</option>
+                <option value="유아9명">유아9명</option>
+              </select>
+              <span>만 2세 미만</span>
+            </div>
+          </div>
+          <div class="select_box search_button">
+            <p><a href="#">여행지 검색하러 가기</a></p>
+            <a href="#" class="go_search">검색하기</a>
+          </div>
+
         </div>
-
-
-
-
-        <h3>날짜 선택</h3>
-        <div class="select_box day_pick">
-          <div class="select_box_left">
-            <input type="text" title="출발일선택" id="from_date" placeholder="출발일 선택">
-          </div>
-          <div class="return">
-            <input class="return_left" type="text" title="귀국일 선택" id="to_date" placeholder="귀국일 선택">
-            <button type="button" class="return_right">미정</button>
-          </div>
-        </div>
-        <h3>인원 선택</h3>
-        <div class="select_person">
-          <div>
-            <select name="adult">
-              <option value="성인1명">성인1명</option>
-              <option value="성인2명">성인2명</option>
-              <option value="성인3명">성인3명</option>
-              <option value="성인4명">성인4명</option>
-              <option value="성인5명">성인5명</option>
-              <option value="성인6명">성인6명</option>
-              <option value="성인7명">성인7명</option>
-              <option value="성인8명">성인8명</option>
-              <option value="성인9명">성인9명</option>
-            </select>
-            <span>만 12세 이상</span>
-          </div>
-          <div>
-            <select name="child">
-              <option value="아동1명">아동1명</option>
-              <option value="아동2명">아동2명</option>
-              <option value="아동3명">아동3명</option>
-              <option value="아동4명">아동4명</option>
-              <option value="아동5명">아동5명</option>
-              <option value="아동6명">아동6명</option>
-              <option value="아동7명">아동7명</option>
-              <option value="아동8명">아동8명</option>
-              <option value="아동9명">아동9명</option>
-            </select>
-            <span>만 2세~11세</span>
-          </div>
-          <div>
-            <select name="kids">
-              <option value="유아1명">유아1명</option>
-              <option value="유아2명">유아2명</option>
-              <option value="유아3명">유아3명</option>
-              <option value="유아4명">유아4명</option>
-              <option value="유아5명">유아5명</option>
-              <option value="유아6명">유아6명</option>
-              <option value="유아7명">유아7명</option>
-              <option value="유아8명">유아8명</option>
-              <option value="유아9명">유아9명</option>
-            </select>
-            <span>만 2세 미만</span>
-          </div>
-        </div>
-        <div class="select_box search_button">
-          <p><a href="#">여행지 검색하러 가기</a></p>
-          <a href="#" class="go_search">검색하기</a>
-        </div>
-
+      </form>
+      <div class="seach_icon">
+        <ul>
+          <li>
+            <a href="#"><img src="img/search1.png" alt="비행기">비행기</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/search2.png" alt="호텔">호텔</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/search3.png" alt="렌트카">렌트카</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/search4.png" alt="티켓">티켓</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/search5.png" alt="이벤트">이벤트</a>
+          </li>
+        </ul>
       </div>
-    </form>
-    <div class="seach_icon">
-      <ul>
-        <li>
-          <a href="#"><img src="img/search1.png" alt="비행기">비행기</a>
-        </li>
-        <li>
-          <a href="#"><img src="img/search2.png" alt="호텔">호텔</a>
-        </li>
-        <li>
-          <a href="#"><img src="img/search3.png" alt="렌트카">렌트카</a>
-        </li>
-        <li>
-          <a href="#"><img src="img/search4.png" alt="티켓">티켓</a>
-        </li>
-        <li>
-          <a href="#"><img src="img/search5.png" alt="이벤트">이벤트</a>
-        </li>
-      </ul>
     </div>
   </div>
 </div>
@@ -730,15 +735,19 @@ banner를 기준으로 왼쪽,오른쪽 으로 배너를 나눠서 오른쪽에 
         <div class="swiper-wrapper">
           <!-- 첫번째 슬라이드 -->
           <div class="swiper-slide">
+            <a href="#"><img src="img/homeshopping1.jpg"></a>
           </div>
           <!-- 두번째 슬라이드 -->
           <div class="swiper-slide">
+            <a href="#"><img src="img/homeshopping2.jpg"></a>
           </div>
           <!-- 세번째 슬라이드 -->
           <div class="swiper-slide">
+            <a href="#"><img src="img/homeshopping3.jpg"></a>
           </div>
           <!-- 네번째 슬라이드 -->
           <div class="swiper-slide">
+            <a href="#"><img src="img/homeshopping4.jpg"></a>
           </div>
         </div>
         <div class="swiper-pagination"></div>

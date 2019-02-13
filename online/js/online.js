@@ -31,11 +31,11 @@ $(".sarch_select_button button").on("click",function()
   $(this).addClass("active3")
   if($(this).hasClass("one_way")){
     $('#arrive_city, #to_date').prop('disabled', true);
-    $(".select_box_right i").hide();
+    $(".select_box_right i,.return_right").hide();
     $(".return_left").next().hide();
   }else{
     $('#arrive_city, #to_date').prop('disabled', false);
-    $(".select_box_right i").show();
+    $(".select_box_right i,.return_right").show();
     $(".return_left").next().show();
   }
 });
@@ -487,17 +487,17 @@ $(".event_img img").attr({"src":"img/event"+eventIndex+".jpg"});
 });
 
 
-  var homeImg=[
-    'homeshopping1.jpg',
-    'homeshopping2.jpg',
-    'homeshopping3.jpg',
-    'homeshopping4.jpg',
-  ]
+  // var homeImg=[
+  //   'homeshopping1.jpg',
+  //   'homeshopping2.jpg',
+  //   'homeshopping3.jpg',
+  //   'homeshopping4.jpg',
+  // ]
 
-  $('.home_shopping .swiper-slide').each(function(i, el){
-    $(this).css('background-image','url(img/'+homeImg[i]+')');
-    // console.log(i);
-  })
+  // $('.home_shopping .swiper-slide').each(function(i, el){
+  //   $(this).css('background-image','url(img/'+homeImg[i]+')');
+  //   // console.log(i);
+  // })
 
   var homeSlide = new Swiper('.home_shopping .swiper-container', {
     slidesPerView: 1,
@@ -510,6 +510,11 @@ $(".event_img img").attr({"src":"img/event"+eventIndex+".jpg"});
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+    effect: 'fade',
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
     },
   });
 
