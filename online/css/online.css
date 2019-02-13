@@ -1,8 +1,6 @@
 @charset "UTF-8";
 /* reset, common */
-*{margin:0; padding:0;
-  font-family:'Malgun Gothic', sans-serif;
-}
+*{margin:0; padding:0;font-family:'Malgun Gothic', sans-serif;}
 li{list-style:none;}
 a{text-decoration:none; color:black;}
 .blind{position: absolute; left:-9999px; text-indent:-9999px; font-size: 0;}
@@ -11,18 +9,11 @@ a{text-decoration:none; color:black;}
 .color a{color:#4F91B2;}
 .bg_color {background: #eeeeee;}
 .mt20{margin-top: 20px;}
-.btn_more {width: 130px; height: 40px; background: none;
-  padding: 10px 20px; box-sizing: border-box; border: 2px solid white;
-  color: white; border-radius: 2px;}
-.btn_more:hover {
-  background: white;  color:black;  font-weight: bold; }
-
-
+.btn_more {width: 130px; height: 40px; background: none; padding: 10px 20px; box-sizing: border-box; border: 2px solid white; color: white; border-radius: 2px;}
+.btn_more:hover {background: white;  color:black;  font-weight: bold; }
+button {border: none; background: none;}
 /* icon */
-.icon{
-  display: inline-block;
-  background: url(../img/sprite-pc.png) no-repeat;
-}
+.icon{display: inline-block; background: url(../img/sprite-pc.png) no-repeat;}
 .icon-google{width: 37px; height: 37px; background-position: 0 0;}
 .icon-youtube{width: 37px; height: 37px; background-position: -50px 0;}
 .icon-blog{width: 37px; height: 37px; background-position: -100px 0;}
@@ -35,7 +26,9 @@ header {
   top: 0;
   font-weight: bold;
 }
-header h1 {text-align: center;}
+header h1 {
+  text-align: center;
+}
 .gnb {
   width: 1200px;
   height: 100px;
@@ -51,8 +44,6 @@ header h1 {text-align: center;}
   margin-left: -400px;
   padding-top: 10px;
   box-sizing: border-box;
-  background: none;
-  border: none;
   display: inline-block;
 }
 
@@ -96,8 +87,6 @@ header h1 {text-align: center;}
   width:20px;
   height: 20px;
   font-size: 16px;
-  background: none;
-  border: none;
 }
 .gnb_right ul li.line::before {
   content: "";height:20px; border:0.5px solid #333333;margin-right: 15px
@@ -228,12 +217,19 @@ dd.color:nth-of-type(1) {
   background-repeat: no-repeat;
   background-position: center;
 }
+.main_slide .pagination_box {
+  width:600px;
+  height: 50px;
+  position: absolute;
+  top:600px;
+  right: 0;
+  z-index: 10;
+}
 .main_slide .swiper-pagination {
   position: absolute;
-  top:310px;
-  left:50%;
-  transform: translateX(-50%);
   z-index: 5;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .main_slide .swiper-pagination-bullet {
     margin-left: 10px;
@@ -244,22 +240,12 @@ dd.color:nth-of-type(1) {
   opacity: 1;
   background: #40b4e3;
 }
-/* .main_slide .swiper-pagination-bullet {
-    width: 9px;
-    height: 9px;
-    margin-left: 10px;
-    display: inline-block;
-    border-radius: 100%;
-    background: #40b4e3;
-    opacity: 0.8;
-} */
-
 .main_slide .text_box {
   width:600px;
+  height: 300px;
   position: absolute;
-  height: 340px;
   top: 50%;
-  transform: translateY(-30%);
+  transform: translateY(-40%);
   right: 0;
   z-index: 10;
   text-align: center;
@@ -292,9 +278,10 @@ dd.color:nth-of-type(1) {
   padding: 10px 20px;
   box-sizing: border-box;
   font-weight: bold;
+  z-index: 1000;
 }
 .main_btn:hover {
-  background-color: white;
+  background: white;
 }
 /* 여행지 검색------------------------------------------ */
 
@@ -377,15 +364,14 @@ button.ad_popup_close {
   width: 140px;
   height: 30px;
   color: white;
-  border: none;
   border-radius: 5px;
 }
 .sarch_select_button button {
   width: 50%;
   height: 100%;
   float: left;
-  border: none;
   border-radius: 5px;
+  background: #ccc;
 }
 .sarch_select_button .active3 {
   background: #aaaaaa;
@@ -420,8 +406,6 @@ button.ad_popup_close {
   text-align:left;
 }
 .city_popup button {
-  background: none;
-  border: none;
   font-size: 20px;
   position: absolute;
   right: 10px;
@@ -626,8 +610,6 @@ aside {
   background: #40b4e3;
 }
 .quick_close ul li button {
-  background: none;
-  border: none;
   font-size: 25px;
   color:white;
 }
@@ -651,7 +633,6 @@ aside {
   font-size: 20px;
   line-height: 35px;
   color: darkgray;
-  border: none;
   background: white;
 }
 
