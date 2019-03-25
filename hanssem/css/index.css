@@ -507,7 +507,7 @@ footer {
 .layout li:first-child {padding-left: 0;}
 .layout li a {
   font-size: 15px;
-  color: #000;
+  color: darkgray;
 }
 .footer_top .line::before {
   content: "";
