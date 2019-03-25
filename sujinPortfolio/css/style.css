@@ -1721,8 +1721,11 @@ h4.package {
 
 .post-body .btn {
     margin-top: 0;
+    background: #aaa;
 }
-
+.post-body .renewal {
+  background: #333;
+}
 /* .pagination {
     display: inline-flex;
     margin-bottom: 0;
