@@ -374,6 +374,9 @@ header .spot li:first-child::after {
   border-radius: 30px;
   color: transparent;
   background: url(../imges/sp_com.png) no-repeat -216px 5px #fff;}
+  .notice article > div ul {
+    height: 182px;
+  }
 .notice article > div.left ul li {
    float: left;
    width: 50%;
