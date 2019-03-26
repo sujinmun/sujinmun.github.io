@@ -84,7 +84,7 @@ header .spot li:first-child::after {
   height: 640px;
 }
 .visual .con .slide {
-  background: url(../imges/main_img1.png) no-repeat center;
+  background: url(../imges/main_img.png) no-repeat center;
   color:white;
   font-size: 32px;
   line-height: 46px;
@@ -127,7 +127,7 @@ header .spot li:first-child::after {
 .product li {
   display: inline-block;
   text-align: center;
-   padding: 0 20px;
+   padding: 0 36px;
  }
 .product li:nth-child(1) a::before {background-position: -250px -60px;}
 .product li:nth-child(2) a::before {background-position: 0 -235px;}
