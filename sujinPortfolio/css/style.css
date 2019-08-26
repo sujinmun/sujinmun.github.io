@@ -845,6 +845,7 @@ h2.menu-item:after {
     height: auto;
     overflow: hidden;
 }
+.section2 {padding: 0px 70px 0px}
 
 .content-blocks.pop {
     left: 100%;
@@ -867,7 +868,7 @@ h2.menu-item:after {
 }
 
 .block-content {
-    margin: 0 0 70px;
+    margin: 0 0 35px;
     overflow: hidden;
 }
 
@@ -1579,6 +1580,22 @@ h4.package {
 .project-media img {
     margin-bottom: 30px;
 }
+
+.content_menu {
+  height:40px;
+
+}
+.content_menu li.content_action {background:#e98f97}
+.content_menu li {
+  width:33%;
+  float:left;
+  color:#fff;
+  text-align: center;
+  line-height: 40px;
+    background:#aaa;
+
+}
+
 
 .video-container {
     margin-bottom: 20px;
@@ -2308,6 +2325,7 @@ h4.package {
     .content {
         padding: 120px 50px 50px;
     }
+    .section2 {padding:0px 50px 50px;}
 }
 
 @media (min-width:768px) and (max-width:980px) {
@@ -2584,8 +2602,9 @@ h4.package {
         min-height: 22px;
     }
     .content {
-        padding: 100px 20px 50px;
+        padding: 100px 20px 0px;
     }
+    .section2 {padding:0px 20px 50px;}
     .content-blocks.pop.showx {
         top: 0;
     }

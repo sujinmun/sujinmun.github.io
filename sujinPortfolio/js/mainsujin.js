@@ -87,20 +87,26 @@
 
 	//Portfolio Modal
 	var mainText=[
-    'Idea Sketch',
+		'GAYEON_MAIN',
+		'GAYEON_MARRIAGE TEST',
+		'GAYEON_VIDEO STORY',
+		'ONLINETOUR_MAIN',
+		'Idea Sketch',
 		'Prototype',
 		'Screen Design',
 		'Style Guid',
-		'Draft Design',
-		'Design Implementation'
+		'Draft Design'
   ]
 	var mainImg=[
-    '001.jpg',
+		'007.jpg',
+		'0011.jpg',
+		'video_story.jpg',
+		'006.jpg',
+		'001.jpg',
 		'002.jpg',
 		'003.jpg',
 		'004.jpg',
 		'005.jpg',
-		'006.jpg'
   ]
 
 	$('.portfolio-item a').on('click',function()
