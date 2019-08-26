@@ -1743,6 +1743,11 @@ h4.package {
 .post-body .renewal {
   background: #333;
 }
+
+.de_pu{
+  display:block;
+  font-weight:bold;
+}
 /* .pagination {
     display: inline-flex;
     margin-bottom: 0;
