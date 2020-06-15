@@ -99,8 +99,8 @@
 		'Draft Design'
   ]
 	var mainImg=[
-		'015.jpg',
 		'016.jpg',
+		'015.jpg',
 		'007.jpg',
 		'0011.jpg',
 		'006.jpg',
