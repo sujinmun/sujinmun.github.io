@@ -87,9 +87,10 @@
 
 	//Portfolio Modal
 	var mainText=[
+		'NEXON COMPUTER MUSIUM',
+		'Diff.Child',
 		'GAYEON_MAIN',
 		'GAYEON_MARRIAGE TEST',
-		'GAYEON_VIDEO STORY',
 		'ONLINETOUR_MAIN',
 		'Idea Sketch',
 		'Prototype',
@@ -98,9 +99,10 @@
 		'Draft Design'
   ]
 	var mainImg=[
+		'015.jpg',
+		'016.jpg',
 		'007.jpg',
 		'0011.jpg',
-		'video_story.jpg',
 		'006.jpg',
 		'001.jpg',
 		'002.jpg',
